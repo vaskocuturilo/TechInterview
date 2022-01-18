@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CommercialNoteCreateChangeViewController: UIViewController {
+class TechInterviewNoteCreateChangeViewController: UIViewController {
     @IBOutlet weak var noteTitleTextField: UITextField!
     @IBOutlet weak var noteTextView: UITextView!
     @IBOutlet weak var noteDateLabel: UILabel!

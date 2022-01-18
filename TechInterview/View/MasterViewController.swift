@@ -45,7 +45,7 @@ class MasterViewController: UITableViewController {
     
     @objc
     func insertNewObject(_ sender: Any) {
-       print("Open")
+      performSegue(withIdentifier: "showCreateNoteSegue", sender: self)
     }
 
 }

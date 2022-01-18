@@ -16,6 +16,7 @@
 		724690442797269E006B74A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724690422797269E006B74A1 /* LaunchScreen.storyboard */; };
 		7246904F2797269F006B74A1 /* TechInterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7246904E2797269F006B74A1 /* TechInterviewTests.swift */; };
 		7246905A2797269F006B74A1 /* TechInterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724690592797269F006B74A1 /* TechInterviewUITests.swift */; };
+		72E5E19227974D8E005323D1 /* CommercialNoteCreateChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E5E19127974D8E005323D1 /* CommercialNoteCreateChangeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		724690552797269F006B74A1 /* TechInterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechInterviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		724690592797269F006B74A1 /* TechInterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechInterviewUITests.swift; sourceTree = "<group>"; };
 		7246905B2797269F006B74A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72E5E19127974D8E005323D1 /* CommercialNoteCreateChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommercialNoteCreateChangeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				724690382797269E006B74A1 /* MasterViewController.swift */,
+				72E5E19127974D8E005323D1 /* CommercialNoteCreateChangeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				724690352797269E006B74A1 /* AppDelegate.swift in Sources */,
 				724690372797269E006B74A1 /* SceneDelegate.swift in Sources */,
 				7246903F2797269E006B74A1 /* TechInterview.xcdatamodeld in Sources */,
+				72E5E19227974D8E005323D1 /* CommercialNoteCreateChangeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

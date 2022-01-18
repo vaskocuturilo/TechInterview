@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		724690352797269E006B74A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724690342797269E006B74A1 /* AppDelegate.swift */; };
 		724690372797269E006B74A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724690362797269E006B74A1 /* SceneDelegate.swift */; };
-		724690392797269E006B74A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724690382797269E006B74A1 /* ViewController.swift */; };
+		724690392797269E006B74A1 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724690382797269E006B74A1 /* MasterViewController.swift */; };
 		7246903C2797269E006B74A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7246903A2797269E006B74A1 /* Main.storyboard */; };
 		7246903F2797269E006B74A1 /* TechInterview.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7246903D2797269E006B74A1 /* TechInterview.xcdatamodeld */; };
 		724690412797269E006B74A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724690402797269E006B74A1 /* Assets.xcassets */; };
@@ -39,7 +39,7 @@
 		724690312797269E006B74A1 /* TechInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724690342797269E006B74A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		724690362797269E006B74A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		724690382797269E006B74A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		724690382797269E006B74A1 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		7246903B2797269E006B74A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7246903E2797269E006B74A1 /* TechInterview.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TechInterview.xcdatamodel; sourceTree = "<group>"; };
 		724690402797269E006B74A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,9 +101,9 @@
 		724690332797269E006B74A1 /* TechInterview */ = {
 			isa = PBXGroup;
 			children = (
+				72469069279735AC006B74A1 /* View */,
 				724690342797269E006B74A1 /* AppDelegate.swift */,
 				724690362797269E006B74A1 /* SceneDelegate.swift */,
-				724690382797269E006B74A1 /* ViewController.swift */,
 				7246903A2797269E006B74A1 /* Main.storyboard */,
 				724690402797269E006B74A1 /* Assets.xcassets */,
 				724690422797269E006B74A1 /* LaunchScreen.storyboard */,
@@ -129,6 +129,14 @@
 				7246905B2797269F006B74A1 /* Info.plist */,
 			);
 			path = TechInterviewUITests;
+			sourceTree = "<group>";
+		};
+		72469069279735AC006B74A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				724690382797269E006B74A1 /* MasterViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				724690392797269E006B74A1 /* ViewController.swift in Sources */,
+				724690392797269E006B74A1 /* MasterViewController.swift in Sources */,
 				724690352797269E006B74A1 /* AppDelegate.swift in Sources */,
 				724690372797269E006B74A1 /* SceneDelegate.swift in Sources */,
 				7246903F2797269E006B74A1 /* TechInterview.xcdatamodeld in Sources */,

@@ -17,6 +17,8 @@
 		7246904F2797269F006B74A1 /* TechInterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7246904E2797269F006B74A1 /* TechInterviewTests.swift */; };
 		7246905A2797269F006B74A1 /* TechInterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724690592797269F006B74A1 /* TechInterviewUITests.swift */; };
 		72480E702797739C0050B8A9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72480E6F2797739C0050B8A9 /* DetailViewController.swift */; };
+		72C61EDF27987C2D00AA7BAF /* NotesModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C61EDE27987C2D00AA7BAF /* NotesModelData.swift */; };
+		72C61EE327987C6B00AA7BAF /* NotesDateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C61EE227987C6B00AA7BAF /* NotesDateHelper.swift */; };
 		72E5E19227974D8E005323D1 /* TechInterviewNoteCreateChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E5E19127974D8E005323D1 /* TechInterviewNoteCreateChangeViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		724690592797269F006B74A1 /* TechInterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechInterviewUITests.swift; sourceTree = "<group>"; };
 		7246905B2797269F006B74A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72480E6F2797739C0050B8A9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		72C61EDE27987C2D00AA7BAF /* NotesModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesModelData.swift; sourceTree = "<group>"; };
+		72C61EE227987C6B00AA7BAF /* NotesDateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDateHelper.swift; sourceTree = "<group>"; };
 		72E5E19127974D8E005323D1 /* TechInterviewNoteCreateChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechInterviewNoteCreateChangeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +109,9 @@
 		724690332797269E006B74A1 /* TechInterview */ = {
 			isa = PBXGroup;
 			children = (
+				72C61EE127987C5000AA7BAF /* Helpers */,
+				72C61EE027987C3200AA7BAF /* Model */,
+				72C61EDD27987B6400AA7BAF /* CoreModel */,
 				72469069279735AC006B74A1 /* View */,
 				724690342797269E006B74A1 /* AppDelegate.swift */,
 				724690362797269E006B74A1 /* SceneDelegate.swift */,
@@ -112,7 +119,6 @@
 				724690402797269E006B74A1 /* Assets.xcassets */,
 				724690422797269E006B74A1 /* LaunchScreen.storyboard */,
 				724690452797269E006B74A1 /* Info.plist */,
-				7246903D2797269E006B74A1 /* TechInterview.xcdatamodeld */,
 			);
 			path = TechInterview;
 			sourceTree = "<group>";
@@ -143,6 +149,30 @@
 				72480E6F2797739C0050B8A9 /* DetailViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		72C61EDD27987B6400AA7BAF /* CoreModel */ = {
+			isa = PBXGroup;
+			children = (
+				7246903D2797269E006B74A1 /* TechInterview.xcdatamodeld */,
+			);
+			path = CoreModel;
+			sourceTree = "<group>";
+		};
+		72C61EE027987C3200AA7BAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72C61EDE27987C2D00AA7BAF /* NotesModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		72C61EE127987C5000AA7BAF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				72C61EE227987C6B00AA7BAF /* NotesDateHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,9 +308,11 @@
 				724690392797269E006B74A1 /* MasterViewController.swift in Sources */,
 				724690352797269E006B74A1 /* AppDelegate.swift in Sources */,
 				724690372797269E006B74A1 /* SceneDelegate.swift in Sources */,
+				72C61EDF27987C2D00AA7BAF /* NotesModelData.swift in Sources */,
 				72480E702797739C0050B8A9 /* DetailViewController.swift in Sources */,
 				7246903F2797269E006B74A1 /* TechInterview.xcdatamodeld in Sources */,
 				72E5E19227974D8E005323D1 /* TechInterviewNoteCreateChangeViewController.swift in Sources */,
+				72C61EE327987C6B00AA7BAF /* NotesDateHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

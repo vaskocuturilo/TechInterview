@@ -17,6 +17,8 @@
 		7246904F2797269F006B74A1 /* TechInterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7246904E2797269F006B74A1 /* TechInterviewTests.swift */; };
 		7246905A2797269F006B74A1 /* TechInterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724690592797269F006B74A1 /* TechInterviewUITests.swift */; };
 		72480E702797739C0050B8A9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72480E6F2797739C0050B8A9 /* DetailViewController.swift */; };
+		72C356E92799FD250086541F /* NotesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C356E82799FD250086541F /* NotesStorage.swift */; };
+		72C356EB2799FDB80086541F /* NotesCoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C356EA2799FDB80086541F /* NotesCoreDataHelper.swift */; };
 		72C61EDF27987C2D00AA7BAF /* NotesModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C61EDE27987C2D00AA7BAF /* NotesModelData.swift */; };
 		72C61EE327987C6B00AA7BAF /* NotesDateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C61EE227987C6B00AA7BAF /* NotesDateHelper.swift */; };
 		72E5E19227974D8E005323D1 /* NoteCreateChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E5E19127974D8E005323D1 /* NoteCreateChangeViewController.swift */; };
@@ -56,6 +58,8 @@
 		724690592797269F006B74A1 /* TechInterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechInterviewUITests.swift; sourceTree = "<group>"; };
 		7246905B2797269F006B74A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72480E6F2797739C0050B8A9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		72C356E82799FD250086541F /* NotesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesStorage.swift; sourceTree = "<group>"; };
+		72C356EA2799FDB80086541F /* NotesCoreDataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCoreDataHelper.swift; sourceTree = "<group>"; };
 		72C61EDE27987C2D00AA7BAF /* NotesModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesModelData.swift; sourceTree = "<group>"; };
 		72C61EE227987C6B00AA7BAF /* NotesDateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDateHelper.swift; sourceTree = "<group>"; };
 		72E5E19127974D8E005323D1 /* NoteCreateChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCreateChangeViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 		724690332797269E006B74A1 /* TechInterview */ = {
 			isa = PBXGroup;
 			children = (
+				72C356E72799FCFD0086541F /* Storage */,
 				72C61EE127987C5000AA7BAF /* Helpers */,
 				72C61EE027987C3200AA7BAF /* Model */,
 				72C61EDD27987B6400AA7BAF /* CoreModel */,
@@ -151,6 +156,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		72C356E72799FCFD0086541F /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				72C356E82799FD250086541F /* NotesStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		72C61EDD27987B6400AA7BAF /* CoreModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				72C61EE227987C6B00AA7BAF /* NotesDateHelper.swift */,
+				72C356EA2799FDB80086541F /* NotesCoreDataHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -309,7 +323,9 @@
 				724690352797269E006B74A1 /* AppDelegate.swift in Sources */,
 				724690372797269E006B74A1 /* SceneDelegate.swift in Sources */,
 				72C61EDF27987C2D00AA7BAF /* NotesModelData.swift in Sources */,
+				72C356E92799FD250086541F /* NotesStorage.swift in Sources */,
 				72480E702797739C0050B8A9 /* DetailViewController.swift in Sources */,
+				72C356EB2799FDB80086541F /* NotesCoreDataHelper.swift in Sources */,
 				7246903F2797269E006B74A1 /* TechInterview.xcdatamodeld in Sources */,
 				72E5E19227974D8E005323D1 /* NoteCreateChangeViewController.swift in Sources */,
 				72C61EE327987C6B00AA7BAF /* NotesDateHelper.swift in Sources */,

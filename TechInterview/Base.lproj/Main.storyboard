@@ -12,7 +12,7 @@
             <objects>
                 <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="R6q-J6-caa" customClass="MasterViewController" customModule="TechInterview" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="104" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hxg-TP-Qb3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
@@ -79,23 +79,23 @@
             <objects>
                 <viewController id="3XX-br-vf4" customClass="NoteCreateChangeViewController" customModule="TechInterview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8x4-Lv-CWB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elF-rx-SRQ">
-                                <rect key="frame" x="16" y="60" width="182" height="17"/>
+                                <rect key="frame" x="16" y="16" width="182" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Text" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYL-IR-noh">
-                                <rect key="frame" x="16" y="127" width="382" height="17"/>
+                                <rect key="frame" x="16" y="83" width="382" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Note 1" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UbP-4h-Vkz">
-                                <rect key="frame" x="16" y="85" width="382" height="34"/>
+                                <rect key="frame" x="16" y="41" width="382" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -103,19 +103,19 @@
                                 </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NS2-im-QzH">
-                                <rect key="frame" x="16" y="152" width="382" height="514"/>
+                                <rect key="frame" x="16" y="108" width="382" height="538"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARo-AH-jLl">
-                                <rect key="frame" x="150" y="60" width="248" height="17"/>
+                                <rect key="frame" x="150" y="16" width="248" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXx-ph-lRR">
-                                <rect key="frame" x="16" y="674" width="382" height="42"/>
+                                <rect key="frame" x="16" y="654" width="382" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="✓ OK"/>
                                 <connections>
@@ -153,23 +153,24 @@
                         <outlet property="noteDoneButton" destination="IXx-ph-lRR" id="3U8-lK-utU"/>
                         <outlet property="noteTextView" destination="NS2-im-QzH" id="1ni-rv-78u"/>
                         <outlet property="noteTitleTextField" destination="UbP-4h-Vkz" id="cZo-2R-Hhy"/>
+                        <segue destination="R6q-J6-caa" kind="show" identifier="backToMasterView" id="q16-1i-Dwc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cwQ-k2-7jC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="E9G-Vb-Zyt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2655.072463768116" y="-401.08695652173918"/>
+            <point key="canvasLocation" x="2549" y="-476"/>
         </scene>
         <!--Detail-->
         <scene sceneID="SQU-AH-mnV">
             <objects>
                 <viewController storyboardIdentifier="edit" title="Detail" id="lNm-7p-FxI" customClass="DetailViewController" customModule="TechInterview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EP3-I8-K6x">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Title" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dL6-Wd-vzE">
-                                <rect key="frame" x="20" y="64" width="374" height="36"/>
+                                <rect key="frame" x="20" y="20" width="374" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -181,13 +182,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0I-4R-xL9">
-                                <rect key="frame" x="16" y="108" width="382" height="16"/>
+                                <rect key="frame" x="16" y="64" width="382" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dZ-vU-KE4">
-                                <rect key="frame" x="20" y="674" width="374" height="42"/>
+                                <rect key="frame" x="20" y="654" width="374" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="✎ Edit"/>
                             </button>
@@ -221,7 +222,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIm-ag-95g" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="430" y="318"/>
+            <point key="canvasLocation" x="1549" y="279"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4K8-ne-mmd">
@@ -244,5 +245,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="JD3-qq-MBn"/>
+        <segue reference="q16-1i-Dwc"/>
     </inferredMetricsTieBreakers>
 </document>

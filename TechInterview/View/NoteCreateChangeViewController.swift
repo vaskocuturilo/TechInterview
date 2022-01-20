@@ -7,16 +7,20 @@
 
 import UIKit
 
-class TechInterviewNoteCreateChangeViewController: UIViewController {
+class NoteCreateChangeViewController: UIViewController {
     @IBOutlet weak var noteTitleTextField: UITextField!
     @IBOutlet weak var noteTextView: UITextView!
     @IBOutlet weak var noteDateLabel: UILabel!
     @IBOutlet weak var noteDoneButton: UIButton!
+    
+    private(set) var changingReallySimpleNote : NotesModelData?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
-
-   
+    func setChangingReallySimpleNote(changingReallySimpleNote : NotesModelData) {
+        self.changingReallySimpleNote = changingReallySimpleNote
+    }
 }

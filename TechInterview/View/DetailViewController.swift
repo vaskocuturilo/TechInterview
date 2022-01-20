@@ -12,7 +12,39 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var noteDateLabel: UILabel!
     @IBOutlet weak var noteTextView: UITextView!
+    
+    
+    func configureView() {
+        // Update the user interface for the detail item.
+        if let detail = detailItem {
+            if let topicLabel = noteTitleLabel,
+               let dateLabel = noteDateLabel,
+               let textView = noteTextView {
+                topicLabel.text = detail.noteTitle
+                dateLabel.text = NotesDateHelper.convertDate(date: Date.init(seconds: detail.noteTimeStamp))
+                textView.text = detail.noteText
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    var detailItem: NotesModelData? {
+        didSet {
+            // Update the view.
+            configureView()
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showChangeNoteSegue" {
+            let changeNoteViewController = segue.destination as! NoteCreateChangeViewController
+            if let detail = detailItem {
+                changeNoteViewController.setChangingReallySimpleNote(
+                    changingReallySimpleNote: detail)
+            }
+        }
     }
 }

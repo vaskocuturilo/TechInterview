@@ -74,10 +74,10 @@
             </objects>
             <point key="canvasLocation" x="1549.2753623188407" y="-476.08695652173918"/>
         </scene>
-        <!--Tech Interview Note Create Change View Controller-->
+        <!--Note Create Change View Controller-->
         <scene sceneID="rdR-I1-B72">
             <objects>
-                <viewController id="3XX-br-vf4" customClass="TechInterviewNoteCreateChangeViewController" customModule="TechInterview" sceneMemberID="viewController">
+                <viewController id="3XX-br-vf4" customClass="NoteCreateChangeViewController" customModule="TechInterview" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8x4-Lv-CWB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

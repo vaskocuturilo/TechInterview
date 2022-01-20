@@ -19,7 +19,7 @@
 		72480E702797739C0050B8A9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72480E6F2797739C0050B8A9 /* DetailViewController.swift */; };
 		72C61EDF27987C2D00AA7BAF /* NotesModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C61EDE27987C2D00AA7BAF /* NotesModelData.swift */; };
 		72C61EE327987C6B00AA7BAF /* NotesDateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C61EE227987C6B00AA7BAF /* NotesDateHelper.swift */; };
-		72E5E19227974D8E005323D1 /* TechInterviewNoteCreateChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E5E19127974D8E005323D1 /* TechInterviewNoteCreateChangeViewController.swift */; };
+		72E5E19227974D8E005323D1 /* NoteCreateChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E5E19127974D8E005323D1 /* NoteCreateChangeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		72480E6F2797739C0050B8A9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		72C61EDE27987C2D00AA7BAF /* NotesModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesModelData.swift; sourceTree = "<group>"; };
 		72C61EE227987C6B00AA7BAF /* NotesDateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDateHelper.swift; sourceTree = "<group>"; };
-		72E5E19127974D8E005323D1 /* TechInterviewNoteCreateChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechInterviewNoteCreateChangeViewController.swift; sourceTree = "<group>"; };
+		72E5E19127974D8E005323D1 /* NoteCreateChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCreateChangeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				724690382797269E006B74A1 /* MasterViewController.swift */,
-				72E5E19127974D8E005323D1 /* TechInterviewNoteCreateChangeViewController.swift */,
+				72E5E19127974D8E005323D1 /* NoteCreateChangeViewController.swift */,
 				72480E6F2797739C0050B8A9 /* DetailViewController.swift */,
 			);
 			path = View;
@@ -311,7 +311,7 @@
 				72C61EDF27987C2D00AA7BAF /* NotesModelData.swift in Sources */,
 				72480E702797739C0050B8A9 /* DetailViewController.swift in Sources */,
 				7246903F2797269E006B74A1 /* TechInterview.xcdatamodeld in Sources */,
-				72E5E19227974D8E005323D1 /* TechInterviewNoteCreateChangeViewController.swift in Sources */,
+				72E5E19227974D8E005323D1 /* NoteCreateChangeViewController.swift in Sources */,
 				72C61EE327987C6B00AA7BAF /* NotesDateHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

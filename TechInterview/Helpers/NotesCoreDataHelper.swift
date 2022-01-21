@@ -130,4 +130,40 @@ class NotesCoreDataHelper {
             return nil
         }
     }
+    
+    static func changeNoteInCoreData(
+        noteToBeChanged:        NotesModelData,
+        inManagedObjectContext: NSManagedObjectContext) {
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Note")
+        
+        let noteIdPredicate = NSPredicate(format: "noteId = %@", noteToBeChanged.noteId as CVarArg)
+        
+        fetchRequest.predicate = noteIdPredicate
+        
+        do {
+            let fetchedNotesFromCoreData = try inManagedObjectContext.fetch(fetchRequest)
+            let noteManagedObjectToBeChanged = fetchedNotesFromCoreData[0] as! NSManagedObject
+            
+            // make the changes
+            noteManagedObjectToBeChanged.setValue(
+                noteToBeChanged.noteTitle,
+                forKey: "noteTitle")
+            
+            noteManagedObjectToBeChanged.setValue(
+                noteToBeChanged.noteText,
+                forKey: "noteText")
+            
+            noteManagedObjectToBeChanged.setValue(
+                noteToBeChanged.noteTimeStamp,
+                forKey: "noteTimeStamp")
+            
+            // save
+            try inManagedObjectContext.save()
+            
+        } catch let error as NSError {
+            // TODO error handling
+            print("Could not change. \(error), \(error.userInfo)")
+        }
+    }
 }

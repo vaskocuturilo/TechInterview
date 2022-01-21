@@ -191,6 +191,9 @@
                                 <rect key="frame" x="20" y="654" width="374" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="✎ Edit"/>
+                                <connections>
+                                    <segue destination="3XX-br-vf4" kind="show" identifier="showChangeNoteSegue" id="2Kn-Zo-WGO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oMG-3q-x6m"/>
@@ -217,7 +220,6 @@
                         <outlet property="noteDateLabel" destination="P0I-4R-xL9" id="A06-DE-iRp"/>
                         <outlet property="noteTextView" destination="YZl-hD-8H9" id="9PW-Jc-bQl"/>
                         <outlet property="noteTitleLabel" destination="dL6-Wd-vzE" id="qby-Vj-fgl"/>
-                        <segue destination="3XX-br-vf4" kind="show" identifier="showChangeNoteSegue" id="JD3-qq-MBn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIm-ag-95g" sceneMemberID="firstResponder"/>
@@ -244,7 +246,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mdB-5r-cZw"/>
+        <segue reference="2Kn-Zo-WGO"/>
         <segue reference="q16-1i-Dwc"/>
     </inferredMetricsTieBreakers>
 </document>

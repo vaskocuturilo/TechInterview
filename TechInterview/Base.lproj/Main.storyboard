@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="104" id="b9a-oA-ui3" customClass="CommercialNoteUITableViewCell" customModule="TechInterview" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="104" id="b9a-oA-ui3" customClass="NoteUITableViewCell" customModule="TechInterview" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.333333969116211" width="414" height="104"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b9a-oA-ui3" id="dHF-Lw-J9e">
@@ -56,9 +56,9 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <outlet property="noteDateLabel" destination="hA8-Ee-Hdo" id="fVf-8s-7nI"/>
-                                    <outlet property="noteTextLabel" destination="D8B-23-GsI" id="oWl-t5-g9l"/>
-                                    <outlet property="noteTitleLabel" destination="Hy9-qz-fyo" id="MsF-36-Abm"/>
+                                    <outlet property="noteDateLabel" destination="hA8-Ee-Hdo" id="rqE-Vg-j26"/>
+                                    <outlet property="noteTextLabel" destination="D8B-23-GsI" id="BKQ-De-aDa"/>
+                                    <outlet property="noteTitleLabel" destination="Hy9-qz-fyo" id="2SQ-Le-Amq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -244,7 +244,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JD3-qq-MBn"/>
+        <segue reference="mdB-5r-cZw"/>
         <segue reference="q16-1i-Dwc"/>
     </inferredMetricsTieBreakers>
 </document>

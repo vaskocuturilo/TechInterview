@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		721FBCD4279B359E008E76F0 /* NoteUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721FBCD3279B359E008E76F0 /* NoteUITableViewCell.swift */; };
 		724690352797269E006B74A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724690342797269E006B74A1 /* AppDelegate.swift */; };
 		724690372797269E006B74A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724690362797269E006B74A1 /* SceneDelegate.swift */; };
 		724690392797269E006B74A1 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724690382797269E006B74A1 /* MasterViewController.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		721FBCD3279B359E008E76F0 /* NoteUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteUITableViewCell.swift; sourceTree = "<group>"; };
 		724690312797269E006B74A1 /* TechInterview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechInterview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724690342797269E006B74A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		724690362797269E006B74A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				724690382797269E006B74A1 /* MasterViewController.swift */,
 				72E5E19127974D8E005323D1 /* NoteCreateChangeViewController.swift */,
 				72480E6F2797739C0050B8A9 /* DetailViewController.swift */,
+				721FBCD3279B359E008E76F0 /* NoteUITableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				724690392797269E006B74A1 /* MasterViewController.swift in Sources */,
 				724690352797269E006B74A1 /* AppDelegate.swift in Sources */,
 				724690372797269E006B74A1 /* SceneDelegate.swift in Sources */,
+				721FBCD4279B359E008E76F0 /* NoteUITableViewCell.swift in Sources */,
 				72C61EDF27987C2D00AA7BAF /* NotesModelData.swift in Sources */,
 				72C356E92799FD250086541F /* NotesStorage.swift in Sources */,
 				72480E702797739C0050B8A9 /* DetailViewController.swift in Sources */,

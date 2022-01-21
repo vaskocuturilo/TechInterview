@@ -1,2 +1,2 @@
 # TechInterview
-The application for tech Interview
+This application helps prepare for a technical interview.

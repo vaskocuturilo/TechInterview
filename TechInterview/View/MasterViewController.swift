@@ -66,6 +66,18 @@ class MasterViewController: UITableViewController {
       performSegue(withIdentifier: "showCreateNoteSegue", sender: self)
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                //let object = objects[indexPath.row]
+                let object = NotesStorage.storage.readNote(at: indexPath.row)
+                let controller = segue.destination as! DetailViewController
+                controller.detailItem = object
+            }
+        }
+    }
+    
     // MARK: - Table view data source
     
     override func numberOfSections(in tableView: UITableView) -> Int {

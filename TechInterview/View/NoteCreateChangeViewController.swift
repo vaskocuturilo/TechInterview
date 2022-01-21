@@ -46,8 +46,11 @@ class NoteCreateChangeViewController: UIViewController, UITextViewDelegate, UIGe
     }
     
     @IBAction func tapAddButton(_ sender: Any) {
-        addItem()
-        
+        if self.changingReallySimpleNote != nil {
+            changeItem()
+        } else {
+            addItem()
+        }
     }
     
     func setChangingReallySimpleNote(changingReallySimpleNote : NotesModelData) {
@@ -68,11 +71,43 @@ class NoteCreateChangeViewController: UIViewController, UITextViewDelegate, UIGe
             sender: self)
     }
     
-    func textViewDidChange(_ textView: UITextView) {
-        if ( noteTitleTextField.text?.isEmpty ?? true ) || ( textView.text?.isEmpty ?? true ) {
-            noteDoneButton.isEnabled = false
+    private func changeItem() -> Void {
+        if let changingReallySimpleNote = self.changingReallySimpleNote {
+            NotesStorage.storage.changeNote(
+                noteToBeChanged: NotesModelData(
+                    noteId:        changingReallySimpleNote.noteId,
+                    noteTitle:     noteTitleTextField.text!,
+                    noteText:      noteTextView.text,
+                    noteTimeStamp: noteCreationTimeStamp)
+            )
+            performSegue(
+                withIdentifier: "backToMasterView",
+                sender: self)
         } else {
+            let alert = UIAlertController(
+                title: "Unexpected error",
+                message: "Cannot change the note, unexpected error occurred. Try again later.",
+                preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "OK",
+                                          style: .default ) { (_) in self.performSegue(
+                                withIdentifier: "backToMasterView",
+                                sender: self)})
+            self.present(alert, animated: true)
+        }
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        if self.changingReallySimpleNote != nil {
+            // change mode
             noteDoneButton.isEnabled = true
+        } else {
+            // create mode
+            if ( noteTitleTextField.text?.isEmpty ?? true ) || ( textView.text?.isEmpty ?? true ) {
+                noteDoneButton.isEnabled = false
+            } else {
+                noteDoneButton.isEnabled = true
+            }
         }
     }
 }

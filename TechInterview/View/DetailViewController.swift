@@ -29,6 +29,7 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureView()
     }
     
     var detailItem: NotesModelData? {

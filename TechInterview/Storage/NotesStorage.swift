@@ -82,4 +82,23 @@ class NotesStorage {
     func count() -> Int {
         return NotesCoreDataHelper.count
     }
+    
+    func changeNote(noteToBeChanged: NotesModelData) {
+        if managedContextHasBeenSet {
+            var noteToBeChangedIndex : Int?
+            noteIndexToIdDict.forEach { (index: Int, noteId: UUID) in
+                if noteId == noteToBeChanged.noteId {
+                    noteToBeChangedIndex = index
+                    return
+                }
+            }
+            if noteToBeChangedIndex != nil {
+                NotesCoreDataHelper.changeNoteInCoreData(
+                    noteToBeChanged: noteToBeChanged,
+                    inManagedObjectContext: self.managedObjectContext)
+            } else {
+                // TODO error handling
+            }
+        }
+    }
 }

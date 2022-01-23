@@ -95,8 +95,6 @@ class MasterViewController: UITableViewController {
         
         if let object = NotesStorage.storage.readNote(at: indexPath.row) {
             cell.noteTitleLabel!.text = object.noteTitle
-            cell.noteTextLabel!.text = object.noteText
-            cell.noteDateLabel!.text = NotesDateHelper.convertDate(date: Date.init(seconds: object.noteTimeStamp))
         }
         
         return cell

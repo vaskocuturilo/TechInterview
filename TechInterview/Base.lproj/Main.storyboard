@@ -29,35 +29,15 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA8-Ee-Hdo">
-                                            <rect key="frame" x="16" y="44.666666666666664" width="382" height="17"/>
-                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8B-23-GsI">
-                                            <rect key="frame" x="16" y="69.666666666666671" width="382" height="16"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="D8B-23-GsI" firstAttribute="top" secondItem="hA8-Ee-Hdo" secondAttribute="bottom" constant="8" id="BTb-9y-vSr"/>
-                                        <constraint firstAttribute="trailing" secondItem="hA8-Ee-Hdo" secondAttribute="trailing" constant="16" id="Bi4-Tt-zQn"/>
-                                        <constraint firstAttribute="trailing" secondItem="D8B-23-GsI" secondAttribute="trailing" constant="16" id="LIc-g3-dmn"/>
-                                        <constraint firstItem="hA8-Ee-Hdo" firstAttribute="leading" secondItem="dHF-Lw-J9e" secondAttribute="leading" constant="16" id="OyK-RF-U7S"/>
                                         <constraint firstItem="Hy9-qz-fyo" firstAttribute="top" secondItem="dHF-Lw-J9e" secondAttribute="top" constant="16" id="VJ3-fg-xQf"/>
                                         <constraint firstItem="Hy9-qz-fyo" firstAttribute="leading" secondItem="dHF-Lw-J9e" secondAttribute="leading" constant="16" id="WAC-Gf-zZ4"/>
-                                        <constraint firstItem="D8B-23-GsI" firstAttribute="leading" secondItem="dHF-Lw-J9e" secondAttribute="leading" constant="16" id="X5d-ui-uHh"/>
                                         <constraint firstAttribute="trailing" secondItem="Hy9-qz-fyo" secondAttribute="trailing" constant="16" id="pkN-qG-Uwi"/>
-                                        <constraint firstItem="hA8-Ee-Hdo" firstAttribute="top" secondItem="Hy9-qz-fyo" secondAttribute="bottom" constant="7.5" id="xum-9O-jsp"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <outlet property="noteDateLabel" destination="hA8-Ee-Hdo" id="rqE-Vg-j26"/>
-                                    <outlet property="noteTextLabel" destination="D8B-23-GsI" id="BKQ-De-aDa"/>
                                     <outlet property="noteTitleLabel" destination="Hy9-qz-fyo" id="2SQ-Le-Amq"/>
                                 </connections>
                             </tableViewCell>
@@ -246,7 +226,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2Kn-Zo-WGO"/>
+        <segue reference="mdB-5r-cZw"/>
         <segue reference="q16-1i-Dwc"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -9,21 +9,8 @@ import UIKit
 
 class MasterViewController: UITableViewController {
     
-    private let composeButton: UIButton = {
-        
-        let button = UIButton()
-        
-        button.backgroundColor = .systemBlue
-        button.tintColor = .white
-        button.setImage(UIImage(systemName: "",
-                                withConfiguration: UIImage.SymbolConfiguration(pointSize: 32, weight: .medium)),for: .normal)
-        button.layer.cornerRadius = 40
-        button.layer.shadowColor = UIColor.label.cgColor
-        button.layer.shadowOpacity = 0.4
-        button.layer.shadowRadius = 10
-        return button
-    }()
-
+    let array = ["Test1", "Test2", "Test3", "Test4"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
@@ -43,18 +30,13 @@ class MasterViewController: UITableViewController {
         
         NotesStorage.storage.setManagedContext(managedObjectContext: managedContext)
         
-        navigationItem.leftBarButtonItem = editButtonItem
-        
-        view.addSubview(composeButton)
-        composeButton.addTarget(self, action:#selector(insertNewObject(_:)), for:.touchUpInside )
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Random", style: .plain, target: self, action: #selector(randomNewObject))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(insertNewObject))
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        composeButton.frame = CGRect(x: view.frame.width - 80 - 40,
-                                     y: view.frame.height - 80 - 70 - view.safeAreaInsets.bottom,
-                                     width: 80,
-                                     height: 80)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -63,9 +45,26 @@ class MasterViewController: UITableViewController {
     
     @objc
     func insertNewObject(_ sender: Any) {
-      performSegue(withIdentifier: "showCreateNoteSegue", sender: self)
+        performSegue(withIdentifier: "showCreateNoteSegue", sender: self)
     }
     
+    @objc
+    func randomNewObject(_ sender: Any) {
+        
+        let refreshAlert = UIAlertController(title: "Random exercise", message: array.randomElement(), preferredStyle: UIAlertController.Style.alert)
+        
+        refreshAlert.addAction(UIAlertAction(title: "Fail", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Handle FAIL")
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "Pass", style: .default, handler: { (action: UIAlertAction!) in
+            print("Handle PASS")
+        }))
+        
+        
+        present(refreshAlert, animated: true, completion: nil)
+        
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
@@ -104,7 +103,7 @@ class MasterViewController: UITableViewController {
         self.performSegue(withIdentifier: "showDetail", sender: self)
         
     }
-   
+    
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
@@ -116,6 +115,6 @@ class MasterViewController: UITableViewController {
         } else if editingStyle == .insert {
         }
     }
-
+    
 }
 

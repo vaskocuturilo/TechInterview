@@ -9,7 +9,7 @@ import UIKit
 
 class MasterViewController: UITableViewController {
     
-    let array = ["Test1", "Test2", "Test3", "Test4"]
+    var previousNumber: UInt32?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,20 +50,28 @@ class MasterViewController: UITableViewController {
     
     @objc
     func randomNewObject(_ sender: Any) {
-        
-        let refreshAlert = UIAlertController(title: "Random exercise", message: array.randomElement(), preferredStyle: UIAlertController.Style.alert)
+        let object = NotesStorage.storage.readNote(at: Int(randomNumber()))
+        let refreshAlert = UIAlertController(title: "Random exercise", message: object?.noteTitle, preferredStyle: UIAlertController.Style.alert)
         
         refreshAlert.addAction(UIAlertAction(title: "Fail", style: .cancel, handler: { (action: UIAlertAction!) in
-            print("Handle FAIL")
+            
         }))
         
         refreshAlert.addAction(UIAlertAction(title: "Pass", style: .default, handler: { (action: UIAlertAction!) in
             print("Handle PASS")
         }))
         
-        
         present(refreshAlert, animated: true, completion: nil)
         
+    }
+    
+    func randomNumber() -> UInt32 {
+        var randomNumber = arc4random_uniform(UInt32(NotesStorage.storage.count()))
+        while previousNumber == randomNumber {
+            randomNumber = arc4random_uniform(UInt32(NotesStorage.storage.count()))
+        }
+        previousNumber = randomNumber
+        return randomNumber
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -115,6 +123,5 @@ class MasterViewController: UITableViewController {
         } else if editingStyle == .insert {
         }
     }
-    
 }
 
